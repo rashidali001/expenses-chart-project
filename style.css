@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: hsl(28, 39%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+main{
+    max-width: 700px;
+    margin: auto;
+}
+@media (min-width:800px){
+}
+div.balance{
+    background-color: hsl(10, 79%, 65%);
+    background-image: url('./images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    color: #fff;
+}
+div.balance > p {
+    margin-bottom: 20px;
+}
+
+div.chart{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+div.chart > p{
+    font-size: 25px;
+    font-weight: 500;
+}
+div.graphs{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 30vh;
+}
+div.bars{
+    width:12%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+}
+
+div.dates{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+div.bar-dates{
+    width:12%;
+    text-align: center;
+}
