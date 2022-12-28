@@ -13,10 +13,18 @@ body{
     height: 100vh;
 }
 main{
-    max-width: 700px;
+    width: 90%;
     margin: auto;
 }
+@media (min-width:650px) {
+    main{
+        width: 50%;
+    }
+}
 @media (min-width:800px){
+    main{
+        width: 40%;
+    }
 }
 div.balance{
     background-color: hsl(10, 79%, 65%);
@@ -55,14 +63,38 @@ div.bars{
     width:12%;
     background-color: hsl(10, 79%, 65%);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 div.dates{
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 div.bar-dates{
     width:12%;
     text-align: center;
+}
+div.total{
+    margin-top: 15px;
+}
+div.total-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.total-price > h3{
+    width: fit-content;
+}
+div.percentage{
+    display: flex;
+    flex-direction: column;
+}
+div.percentage > p:first-child{
+    text-align: right;
+}
+div.percentage > p:last-child{
+    color: #ccc;
 }
